@@ -8,6 +8,8 @@ In the nutshell:
 
 Image or video frame are just matrices of RGB values. So we change these values on a gray scale and get level of brightness for every pixel. Next we change brightness value on our own ASCII-scale value. For example white pixel has equivalent as " " and the black is "@". Of course if our background is black we have to reverse the scale.
 
+Lags are caused the gif format
+
 ![ascii-webcam](./gif/camera.gif)
 
 ### Libraries
