@@ -8,7 +8,7 @@ In the nutshell:
 
 Image or video frame are just matrices of RGB values. So we change these values on a gray scale and get level of brightness for every pixel. Next we change brightness value on our own ASCII-scale value. For example white pixel has equivalent as " " and the black is "@". Of course if our background is black we have to reverse the scale.
 
-![](https://p40.f3.n0.cdn.getcloudapp.com/items/5zuJBvy4/Screen+Recording+2019-12-30+at+04.37.37.78+PM.gif?v=d8694659ac6ca55b074319d1aa0d546b)
+![ascii-webcam](https://p40.f3.n0.cdn.getcloudapp.com/items/5zuJBvy4/Screen+Recording+2019-12-30+at+04.37.37.78+PM.gif?v=d8694659ac6ca55b074319d1aa0d546b)
 
 ### Libraries
 * `OpenCV` - to capture the webcam video
