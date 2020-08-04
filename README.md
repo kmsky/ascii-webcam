@@ -1,5 +1,5 @@
 # ascii-webcam
-Created in Python 3.7. It is very basic way to get ASCII live video captured from a webcam. In the project I used OpenCV library that allows capturing image from a webcam.
+It is very basic way to get ASCII live video captured from a webcam. In the project I used OpenCV library that allows capturing image from a webcam.
 
 ## How does it work?
 The best explanation how to convert image on ASCII can be found [here](https://robertheaton.com/2018/06/12/programming-projects-for-advanced-beginners-ascii-art/).
@@ -16,9 +16,10 @@ Lags are caused the gif format
 * `OpenCV` - to capture the webcam video
 * `subprocess` - only to clear console after every frame
 
-#### Might be helpful
+### Important
+To work properly on Windows I had to enable `Use legacy console` option in CMD properties. For me the best bufor size and window size is `400x120`. Font size 7.
 
-To work properly on Windows I had to enable `Use legacy console` option in CMD properties.
+#### Might be helpful
 
 ```
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
