@@ -17,7 +17,7 @@ Lags are caused the gif format
 * `subprocess` - only to clear console after every frame
 
 ### Important
-To work properly on Windows I had to enable `Use legacy console` option in CMD properties. For me the best bufor size and window size is `400x120`. Font size 7.
+To work properly on Windows I had to enable `Use legacy console` option in CMD properties. For me the best buffer size and window size is `400x120`. Font size 7.
 
 #### Might be helpful
 
