@@ -1,36 +1,15 @@
-# ascii-webcam
-It is very basic way to get ASCII live video captured from a webcam. In the project I used OpenCV library that allows capturing image from a webcam.
+# ascii-webcam 📸
 
-## How does it work?
-The best explanation how to convert image on ASCII can be found [here](https://robertheaton.com/2018/06/12/programming-projects-for-advanced-beginners-ascii-art/).
+## Overview 📝
 
-In the nutshell:
+`ascii-webcam` is a Python script designed to capture live video from a webcam and convert each video frame into ASCII art in real-time.
 
-Image or video frame are just matrices of RGB values. So we change these values on a gray scale and get level of brightness for every pixel. Next we change brightness value on our own ASCII-scale value. For example white pixel has equivalent as " " and the black is "@". Of course if our background is black we have to reverse the scale.
+## How it works 🤔
 
-Lags are caused the gif format
+The core concept behind converting an image or video frame to ASCII art involves several steps:
 
-![ascii-webcam](./gif/camera.gif)
-
-### Libraries
-* `OpenCV` - to capture the webcam video
-* `subprocess` - only to clear console after every frame
-
-### Important
-To work properly on Windows I had to enable `Use legacy console` option in CMD properties. For me the best buffer size and window size is `400x120`. Font size 7.
-
-#### Might be helpful
-
-```
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-```
-`0` means that captured image will come from webcam. `cv2.CAP_DSHOW` will show image with default proportion without black borders.
-
-I used this [documentation](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_video_display/py_video_display.html) to get info about capturing images with OpenCV.
-
-##### Inspirations
-[eebmagic project](https://github.com/eebmagic/video_text_filter)
-
-License
---------
-MIT
+1. **Capture the Frame**: Use OpenCV to capture a frame from the webcam.
+2. **Grayscale Conversion**: Convert the captured frame from RGB to grayscale to simplify brightness calculations.
+3. **Brightness Calculation**: Determine the brightness level of each pixel.
+4. **ASCII Mapping**: Map each pixel’s brightness level to a corresponding ASCII character. 
+5. **Display**: Render the ASCII representation of the frame in the console.
